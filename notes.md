@@ -16,3 +16,9 @@
 
 4. Usually html form or input controls it's own state, like while typing it update value by themselves. As react is a control freak it made a concept like Controlled element. ---->
    Create a state at setState in to on change then use value={state}
+
+5. In react state is unchangeable. Like ---->
+   const [items,setItems] = useState([]) //here the items is initially []
+   setItems(items => items.push(item)) // can't do that because push changes the items
+   setItems(items => [...items, item]) //...items means all the other values of items and then in the end it adds item to the array.
+   As you can see the [...items, item] is a whole new array that has a the values of items.

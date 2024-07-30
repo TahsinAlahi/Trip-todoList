@@ -22,3 +22,15 @@
    setItems(items => items.push(item)) // can't do that because push changes the items
    setItems(items => [...items, item]) //...items means all the other values of items and then in the end it adds item to the array.
    As you can see the [...items, item] is a whole new array that has a the values of items.
+
+6. Should call the prop names as it's passed to the children ---->
+   <Items onPassedProp={passedProp}/> //in parent component.
+   passedProp(value) // in child component this is wrong calling and it will throw error.
+   onPassedProp(value) // this is how the prop should be called. as its defined in parent component.
+
+7. Could use this code to remove an item from an array ---->
+   const newItems = items.filter((itemOfFunc) => itemOfFunc !== item)
+   It filters out the unwanted item and make a new array.
+   But also could use array.splice(index,count,...replaces) it mutate the actual array.
+
+8.

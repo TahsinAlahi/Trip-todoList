@@ -7,16 +7,19 @@ import Stats from "./components/Stats";
 function App() {
   const [items, setItems] = useState([]);
 
-  const handleAddItems = (item) => {
+  const handleAddItem = (item) => {
     setItems((items) => [...items, item]);
   };
 
-  console.log(items);
+  const handleDeleteItem = (id) => {
+    setItems((items) => items.filter((item) => item.id !== id));
+  };
+
   return (
     <div className="app">
       <Logo />
-      <Form onAddItems={handleAddItems} />
-      <PackingList items={items} />
+      <Form onAddItem={handleAddItem} />
+      <PackingList items={items} onDeleteItem={handleDeleteItem} />
       <Stats />
     </div>
   );

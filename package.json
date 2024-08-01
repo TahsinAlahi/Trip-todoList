@@ -1,7 +1,7 @@
 {
-  "homepage": "https://tahsinalahi.github.io/trip-todo",
+  "homepage": "https://tahsinalahi.github.io/trip-todo/",
   "name": "Trip-todoList",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {

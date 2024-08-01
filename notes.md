@@ -34,3 +34,5 @@
    But also could use array.splice(index,count,...replaces) it mutate the actual array.
 
 8. Need to review the sorting list part again!!!
+
+9. Don't forget to use the homepage like 'https://tahsinalahi.github.io/trip-todo' tahsinalahi not TahsinAlahi.

@@ -14,7 +14,6 @@ function Item({ item, onDeleteItem, onPackedItem }) {
       />
       <span
         style={packed ? { textDecoration: "line-through" } : {}}
-        // onClick={() => onPackedItem(id)}
       >
         {quantity} {description}
       </span>

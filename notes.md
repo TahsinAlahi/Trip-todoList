@@ -33,4 +33,4 @@
    It filters out the unwanted item and make a new array.
    But also could use array.splice(index,count,...replaces) it mutate the actual array.
 
-8.
+8. Need to review the sorting list part again!!!

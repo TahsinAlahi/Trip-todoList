@@ -15,6 +15,11 @@ function App() {
     setItems((items) => items.filter((item) => item.id !== id));
   };
 
+  const handleClearList = () => {
+    const confirm = window.confirm("Do your really want to delete the list ?");
+    if (confirm) setItems([]);
+  };
+
   const handlePackedItem = (id, isPacked) => {
     setItems((items) =>
       items.map((item) =>
@@ -31,6 +36,7 @@ function App() {
         items={items}
         onDeleteItem={handleDeleteItem}
         onPackedItem={handlePackedItem}
+        onClearList={handleClearList}
       />
       <Stats items={items} />
     </div>
